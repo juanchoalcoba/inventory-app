@@ -4,12 +4,13 @@
   "private": true,
   "type": "module",
   "scripts": {
-    "seed": "tsx prisma/seed.ts",
     "dev": "next dev",
     "build": "next build",
     "start": "next start",
-    "lint": "eslint"
+    "lint": "eslint",
+    "seed": "ts-node prisma/seed.ts"
   },
+  
   "dependencies": {
     "@prisma/client": "^6.19.0",
     "@stackframe/stack": "^2.8.49",
